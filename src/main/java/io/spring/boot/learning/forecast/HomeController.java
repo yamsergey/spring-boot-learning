@@ -10,7 +10,6 @@ class HomeController {
     @GetMapping(value = "/",produces = MediaType.TEXT_HTML_VALUE)
     @ResponseBody
     public String home() {
-//        return "Home page of the best forecast application ever.";
         return """
                 <html>
                 <header><title>Welcome</title></header>
