@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 class HomeController {
     @GetMapping("/")
     public String home() {
-        return "Home page of the best forecast application ever.";
+//        return "Home page of the best forecast application ever.";
+        return "<html>\n" + "<header><title>Welcome</title></header>\n" +
+                "<body>\n" + "Home page of the best forecast application ever.\n" + "</body>\n" + "</html>";
     }
 }
