@@ -1,8 +1,17 @@
 package io.spring.boot.learning.forecast;
 
 public class Location {
-    double latitude;
-    double longitude;
+    private String city;
+    private double latitude;
+    private double longitude;
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 
     public double getLatitude() {
         return latitude;
