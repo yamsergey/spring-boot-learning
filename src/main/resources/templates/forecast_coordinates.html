@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<header><title>Welcome</title></header>
+<body>
+Home page of the best forecast application ever.
+
+<!--latitude, longitude and one button "send".-->
+
+<form action="/forecast/coordinates" method="POST"><br>
+    <form action="#" th:action="@{/forecast/coordinates}" th:object="${location}" method="post"><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"/><br>
+        <label for="latitude">Latitude:</label><br>
+        <input type="text" id="latitude" name="latitude"/><br>
+        <label for="longitude">Longitude:</label><br>
+        <input type="text" id="longitude" name="longitude"/><br><br>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
