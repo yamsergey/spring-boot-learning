@@ -11,7 +11,7 @@ This is learning project for Spring Boot. Initial idea is to create weather fore
 
 ### CI
 
-* TBD
+* We are going to write JUnit tests and run them on every PR.
 
 ### CD
 
